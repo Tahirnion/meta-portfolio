@@ -65,7 +65,7 @@ section {
 }
 
 .promotion {
-    background-image: url(/meta-portfolio/photos/promo.jpg) ;
+    background-image: url(/meta-portfolio/photos/promo-med.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;  
     display: flex;
