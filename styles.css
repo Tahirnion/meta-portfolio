@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f1e07b;
+    background-color: #FFEEDD;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ nav {
 nav ul {
     list-style: none;
     text-align: center;
-    background-color: rgb(148, 134, 8);
+    background-color: #E25540;
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
@@ -47,7 +47,7 @@ nav li {
 
 li a {
     text-decoration: none;
-    color: black;
+    color: #2D281A;
     font-weight: 800;
 }
 /* Main */
@@ -65,16 +65,16 @@ section {
 }
 
 .promotion {
-    background-image: url(/meta-portfolio/photos/pasta-promo.jpg) ;
+    background-image: url(/meta-portfolio/photos/promo.jpg) ;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;  
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
     border-radius: 20px;
-    min-height: 15vh;
+    min-height: 400px;
 }
 
 .promotion > h1 {
