@@ -8,7 +8,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 header {
@@ -19,7 +19,7 @@ header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;    
+    width: 30vw;    
 }
 
 /* Nav */
@@ -36,7 +36,7 @@ nav ul {
     justify-content: space-evenly;
     gap: 10px;
     padding: 5px;   
-    border-radius: 15px;
+    border-radius: 10px;
         
 }
 
@@ -47,7 +47,7 @@ nav li {
 
 li a {
     text-decoration: none;
-    color: #2D281A;
+    color: white;
     font-weight: 800;
 }
 /* Main */
@@ -55,7 +55,7 @@ li a {
 main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
 }
 
 /* Section */
@@ -67,14 +67,13 @@ section {
 .promotion {
     background-image: url(/meta-portfolio/photos/promo-med.jpg) ;
     background-repeat: no-repeat;
-    background-size: cover;  
-    background-size: cover;
+    background-size: cover;      
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: c;
     gap: 20px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     min-height: 400px;
 }
 
@@ -82,6 +81,17 @@ section {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.promotion:hover {
+    transform: scale(1.01);
+    transition: 0.15s linear;    
+} 
+
+.promotion:hover > h1 {
+    transform: scale(1.01);
+    transition: 0.15s linear;
+    color: #E25540;
+} 
 
 .promotion > p {
     color: white;
@@ -94,26 +104,53 @@ article {
 /* Card */
 
 .card-container {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
 }
 
 .card {
     background-color: #E25540;
+    color: white;
     padding: 10px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 30px;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.15s linear;
 }
 
 article.card > img {
-    width: 400px;
+    width: inherit;
     height: auto;
 }
 
+article.card > a {
+    text-decoration: none;
+    width: fit-content;
+    color: white;
+}
+
+article.card > a:hover {
+color: blue;
+transition: 0.1s linear;
+}
+
+article.card > a {
+
+}
+    /* Footer */
+    
 footer {
     display: flex;
+    margin-top: 20px;
 }
 
 footer div {
@@ -121,5 +158,13 @@ footer div {
 }
 
 footer div > img {
-    width: 10vw;
+    width: 4vw;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.copyright > h2 {
+    font-size: medium;
 }
