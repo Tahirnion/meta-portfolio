@@ -68,6 +68,7 @@ section {
     background-image: url(/meta-portfolio/photos/promo-med.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;  
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -98,7 +99,7 @@ article {
 }
 
 .card {
-    background-color: rgb(148, 134, 8);
+    background-color: #E25540;
     padding: 10px;
     border-radius: 20px;
     display: flex;
@@ -106,6 +107,10 @@ article {
     justify-content: space-evenly;
 }
 
+article.card > img {
+    width: 400px;
+    height: auto;
+}
 
 footer {
     display: flex;
